@@ -6,6 +6,7 @@
   /* Fonts */
   --title-color: hsl(0, 0%, 7%);
   --card-font: hsl(0, 0%, 42%);
+  --frontend-mentor: hsl(228, 45%, 44%);
 
   /* padding & gap */
   --padding-md: 1rem;
@@ -95,7 +96,7 @@ main {
   color: var(--primary-color);
 }
 
-.preview-card__avatar{
+.preview-card__avatar {
   height: 2rem;
   width: 2rem;
   border-radius: 50%;
@@ -120,6 +121,13 @@ main {
 }
 
 .attribution a {
-  text-decoration: none;
-  color: hsl(228, 45%, 44%);
+  color: var(--frontend-mentor);
+}
+
+/* Reduced Motion Accessibility for medical conditions (like epilepsy or vertigo  */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  .preview-card__title {
+    transition: none;
+  }
 }
