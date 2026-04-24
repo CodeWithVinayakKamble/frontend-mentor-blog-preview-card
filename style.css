@@ -121,7 +121,15 @@ main {
 }
 
 .attribution a {
+  text-decoration: underline;
   color: var(--frontend-mentor);
+  text-underline-offset: 2px;
+}
+
+.attribution a:hover {
+  text-decoration: none;
+  background-color: var(--card-bg);
+  color: var(--title-color);
 }
 
 /* Reduced Motion Accessibility for medical conditions (like epilepsy or vertigo  */
